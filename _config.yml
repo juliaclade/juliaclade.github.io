@@ -1,6 +1,6 @@
 title: Julia Clade CV
 description: This is my CV
-theme: minima
+theme: jekyll-theme-minimal
 # You can specify your GitHub Pages URL if you have a custom domain
 # url: "https://yourusername.github.io"
 # baseurl: "" # leave empty unless your site is in a subfolder
