@@ -1,71 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Centered Rounded Image</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,200&display=swap"
+          rel="stylesheet">
 </head>
-<style>
-    body {
-        font-family: 'Raleway', sans-serif;
-    }
-</style>
 <body>
-<div class="d-flex flex-column justify-content-center align-items-center vh-100" style="background: lightslategrey">
-        <h1 class="text-center mt-4">Julia Clade</h1>
-        <img
-                src="./static/profile.jpg"
-                class="rounded-circle"
-                alt="profile-image"
-                style="width: 250px; height: 300px; border: 1px black"
-        />
-    <p class="d-inline-flex gap-1">
-        <a  style="color: black; text-decoration: none;" data-bs-toggle="collapse" href="#employmentHistory" role="button" aria-expanded="false" aria-controls="employmentHistory">
-            Employment History
+<div class="d-flex flex-column align-items-center vh-100"
+     >
+    <img
+            src="./static/profile.jpg"
+            class="rounded-circle"
+            alt="profile-image"
+            style="width: 250px; height: 300px; border: 1px black; margin-right: 20px"
+    />
+    <h1 class="text-center mt-4">Julia Clade</h1>
+
+
+    <hr class="horizontal-divider"/>
+
+    <!--    employment-->
+    <p style="float: left; width: 60%;">
+        <a style="color: black; text-decoration: none"
+           data-bs-toggle="collapse" href="#employmentHistory" role="button"
+           aria-expanded="false" aria-controls="employmentHistory">
+            <b>EMPLOYMENT HISTORY</b>
         </a>
     </p>
+    <hr class="horizontal-divider"/>
 
-        <div class="collapse" style="min-width: 700px" id="employmentHistory">
-
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col col-lg-2">
-                            2024
-                        </div>
-                        <div class="col-md-auto">
-                            Phocas
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col col-lg-2">
-                            2024
-                        </div>
-                        <div class="col-md-auto">
-                            University of Canterbury - Mathematics Tutor
+    <div class="collapse" style="min-width: 700px" id="employmentHistory">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col col-lg-2 date-column">
+                    <b>2024</b>
+                </div>
+                <div class="col-md-auto">
+                    <div class="employment-description">
+                        <b>Phocas - SOFTWARE DEVELOPMENT INTERN · Usage-Metrics Project</b>
+                        <div class="text-body-width">
+                            This was a 10 week internship to develop functionality to capture Usage-
+                            Metrics data. More about the project under the Project section.
                         </div>
                     </div>
                 </div>
+            </div>
 
-
+            <div class="row">
+                <div class="col col-lg-2 date-column">
+                    <b>2024</b>
+                </div>
+                <div class="col-md-auto">
+                    <div class="employment-description">
+                        <b>University of Canterbury - MATHEMATICS TUTOR · Course Maths 101</b>
+                        <div class="text-body-width">
+                            My role was to cement the fundamentals of calculus with a group of undergraduate
+                            students in their first year at university, helping to ease the transition
+                            from High school and ensuring the best success in their first Exam.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col col-lg-2 date-column">
+                    <b>2020 - 2024</b>
+                </div>
+                <div class="col-md-auto">
+                    <div class="employment-description">
+                        <b>Waste Management T/A Living Earth - DEVELOPER · Technician</b>
+                        <div class="text-body-width">
+                            Development and optimization of new data management and entry system
+                            for monthly reporting and budgeting. Written in Excel with use of new
+                            Macros and existing formulas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col col-lg-2 date-column">
+                    <b>2019 - 2020</b>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="employment-description">
+                        <b>BP Redcliffs - CAFE MANAGER · Food Safety</b>
+                        <div class="text-body-width">
+                            This role gave me invaluable experience in managing a team, recruiting,
+                            payroll, sales and training.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col col-lg-2 date-column">
+                    <b>2004 - 2019</b>
+                </div>
+                <div class="col-md-auto">
+                    <div class="employment-description">
+                        <b>Various Hospitality and Tourism Roles  </b>
+                        <div class="text-body-width">
+                                CUSTOMER SERVICE - TRAVEL AGENT - BARISTA · BaristaTravel Agent
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <hr style="color: black">
-    <!--    employment-->
 
-        <p class="d-inline-flex gap-1">
-            <a  style="color: black; text-decoration: none" data-bs-toggle="collapse" href="#education" role="button" aria-expanded="false" aria-controls="education">
-                Education
-            </a>
-        </p>
-<!--education-->
+
+    <!--education-->
+
+    <p style="float: left; width: 60%;">
+        <a style="color: black; text-decoration: none" data-bs-toggle="collapse"
+           href="#education" role="button" aria-expanded="false"
+           aria-controls="education">
+            <b>EDUCATION</b>
+        </a>
+    </p>
+    <hr class="horizontal-divider"/>
+
     <div class="collapse" style="min-width: 700px" id="education">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col col-lg-2 date-column">
+                    <b>2023 - CURRENT</b>
+                </div>
+                <div class="col-md-auto">
+                    <div class="employment-description">
+                        <b>University of Canterbury - Bachelor of Science</b>
+                        <div class="text-body-width">
+                            <p>Major Computer Science, Minor Mathematics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            2023 - current University of Canterbury - Computer Science
+<!--    projects-->
+    <p style="float: left; width: 60%;">
+        <a style="color: black; text-decoration: none" data-bs-toggle="collapse"
+           href="#projects" role="button" aria-expanded="false"
+           aria-controls="projects">
+            <b>PROJECTS</b>
+        </a>
+    </p>
 
+    <hr class="horizontal-divider"/>
+    <div class="collapse" style="min-width: 700px" id="projects">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col col-lg-2 date-column">
+                    <b>2024</b>
+                </div>
+                <div class="col-md-auto">
+                    <div class="employment-description">
+                        <b>Tower Quest - Resource stockpiling game</b>
+                        <div class="text-body-width">
+                            <p> JAVA, GRADLE, JAVAFX · Time Management
+                            First big project as part of SENG201. We worked in pairs to develop a game
+                            from requirements analysis through design stages to implementation and
+                            testing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-2 date-column">
+                    <b>2024</b>
+                </div>
+                <div class="col-md-auto">
+                    <div class="employment-description">
+                        <b>Microcontroller Game</b>
+                        <div class="text-body-width">
+                            <p> C PROGRAMMING LANGUAGE · Micro-Controller: ATMEL MEGA32U2
+                                This project involved designing a game in teams of two, where two microcontrollers
+                                had to interact. Important aspects here were timing and keeping
+                                track of states to enable seamless communication between the devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-2 date-column">
+                    <b>2024</b>
+                </div>
+                <div class="col-md-auto">
+                    <div class="employment-description">
+                        <b>Usage-Metrics</b>
+                        <div class="text-body-width">
+                            <p> EVENTBRIDGE, LAMBDA, S3, SQS, TERRAFORM, GRAPHQL · Teamwork,
+                                Scrumban, Technical Communication and CI/CD
+                                As a team of two I developed a pipeline, capturing Usage-Metrics in form
+                                of clicks in the front end application, using event driven architecture and
+                                AWS products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,46 @@
+.vertical-divider {
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    margin: 0 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+.horizontal-divider {
+    border: 1px solid black;
+    width: 60%;
+}
+
+.employment-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 500px;
+    text-align: justify;
+}
+.text-body-width {
+    max-width: 500px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: lightslategrey;
+    padding: 20px;
+}
+
+.date-column {
+    position: relative;
+    padding-right: 10px;
+}
+
+.date-column::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+}
